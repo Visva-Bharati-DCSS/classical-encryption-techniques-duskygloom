@@ -1,6 +1,7 @@
 import math
 
-VALID_CH: list[str] = ['\t', '\n'] + [chr(i) for i in range(32, 127)]
+# VALID_CH: list[str] = ['\t', '\n'] + [chr(i) for i in range(32, 127)]
+VALID_CH: list[str] = [chr(i) for i in range(ord('A'), ord('Z')+1)] + [chr(i) for i in range(ord('a'), ord('z')+1)] + [',', '.', ';', '("', '")', '(\'', '\')', '%', 'b/', '\\n']
 NUM_VALID = len(VALID_CH)
 
 
